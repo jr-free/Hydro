@@ -20,4 +20,4 @@ Then, in the Terminal type crontab -e. Edit the crontab file by entering the fol
 * * */2 * * /path/to/the/shell/script/<YOUR-FILE-NAME>.sh > /path/to/the/shell/script/cronlog.log 2>&1
 ```
 
-Save and exit. Your cron job should be operational. The characters * * */2 * * specify the script will run every two days. Feel free to read up on cron to explore other options.
+Save and exit. Your cron job should be operational. The characters * * */2 * * specify the script will run every two days. Feel free to read up on cron to explore other options. The last bit with cronlog.log just creates a log file in the same directory as the shell script that contains any error messages that may be generated when the script runs. Helpful for debugging.
